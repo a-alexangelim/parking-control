@@ -36,7 +36,7 @@ public class ParkingSpotModel implements Serializable {
     private String responsibleName;
 
     @Column(nullable = false, length = 30)
-    private String apartament;
+    private String apartment;
 
     @Column(nullable = false, length = 30)
     private String block;
@@ -105,12 +105,12 @@ public class ParkingSpotModel implements Serializable {
         this.responsibleName = responsibleName;
     }
 
-    public String getApartament() {
-        return apartament;
+    public String getApartment() {
+        return apartment;
     }
 
-    public void setApartament(String apartament) {
-        this.apartament = apartament;
+    public void setApartment(String apartment) {
+        this.apartment = apartment;
     }
 
     public String getBlock() {

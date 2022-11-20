@@ -31,7 +31,6 @@ public class ParkingSpotController {
             return ResponseEntity.status(HttpStatus.CONFLICT).body("Conflito: Placa do carro já existente!");
         }
 
-
         var parkingSpotModel = new ParkingSpotModel();
 
         BeanUtils.copyProperties(parkingSpotDto, parkingSpotModel);
